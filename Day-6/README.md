@@ -12,7 +12,7 @@ At the time of cluster creation, all the services like metric server, cli, core-
 
 When you deploy application in the production servers, we will never deploy any application in the default namespace.
 
-How to create a custom namespace? kubectl create ns tarun-ns kubectl get ns kubectl get pods kubectl run test-pod --image nginx --port 80 -n tarun-ns kubectl get pods -n tarun-ns kubectl delete pod test-pod -n tarun-ns
+How to create a custom namespace? kubectl create ns tarun-ns kubectl get ns kubectl get pods kubectl run test-pod --image nginx --port 80 -n tarun-ns kubectl get pods -n pradeesha-ns kubectl delete pod test-pod -n pradeesha-ns
 
 If pod goes down, there are 3 problems we have to face.
 
@@ -21,21 +21,21 @@ Every pod has own ip address, if pod goes down, the ip address will change - To 
 If pod goes down, along with the pod, we going to lose data - To overcome this problem, we have to implement volumes in Kubernetes.
 Replica Set: Replica Set is a Kubernetes object. It is going to maintain minimum number of nodes 24/7 (Replica set is always maintain desired state is equal to the actual state).
 
-git clone https://github.com/TarunG8504/tarun-k86-manifestfiles.git ls cd tarun-k86-manifestfiles kubectl apply -f rs.yaml kubectl get pods -n tarun-ns kubectl get rs -n tarun-ns
+git clone https://github.com/Pradeesha-s/pradeesha-k86-manifestfiles.git ls cd pradeesha-k86-manifestfiles kubectl apply -f rs.yaml kubectl get pods -n pradeesha-ns kubectl get rs -n pradeesha-ns
 
-kubectl describe pod cart-page-rs-c2t8t -n tarun-ns
+kubectl describe pod cart-page-rs-c2t8t -n pradeesha-ns
 
-Clusters -> tarun-cluster -> Add node group -> test-linux-2 -> IAM role(name) -> launch template -> next -> Instance type (2 cpu, 4gb ram) -> desired node(3) -> maximum node (5) -> enable auto-repair -> next -> next -> create
+Clusters -> pradeesha-cluster -> Add node group -> test-linux-2 -> IAM role(name) -> launch template -> next -> Instance type (2 cpu, 4gb ram) -> desired node(3) -> maximum node (5) -> enable auto-repair -> next -> next -> create
 
 Replica-Set problems In real-time applications, we don't recommend to use replica sets, because we cant able to perform rollout, rollback operations. Deployments: In Kubernetes, we are deploying applications using deployment objects or deployment controller. Deployment will manage the replica set, replica set will manage the pods.
 
-kubectl get rs -n tarun-ns kubectl delete rs cart-page-rs -n tarun-ns kubectl apply -f deployment.yaml -n tarun-ns kubectl get deployments -n tarun-ns kubectl get pods -o wide -n tarun-ns
+kubectl get rs -n pradeesha-ns kubectl delete rs cart-page-rs -n pradeesha-ns kubectl apply -f deployment.yaml -n pradeesha-ns kubectl get deployments -n pradeesha-ns kubectl get pods -o wide -n pradeesha-ns
 
 If you want to expose application through the web browser, Kubernetes will introduce object called services, there are 3 types of services: ClusterIP Service NodePort Service LoadBalancer Service
 
-We are going to implement load-balancer service now, service.yaml git pull kubectl apply -f service.yaml -n tarun-ns
+We are going to implement load-balancer service now, service.yaml git pull kubectl apply -f service.yaml -n shraddha-ns
 
-kubectl get svc -n tarun-ns
+kubectl get svc -n pradeesha-ns
 
 Monitoring: To understand what's going inside the application, we are implementing monitoring dashboards. With the help of monitoring dashboards, we can recognise if something goes wrong in the application and also we can able to identify how much cpu, how much memory consuming by pods, nodes, cluster health.
 
@@ -49,7 +49,7 @@ kubectl get pods -n monitoring
 
 Ansible: Ansible is a configuration management tool, system admin tasks
 
-eksctl delete cluster --name tarun-cluster
+eksctl delete cluster --name pradeesha-cluster
 
 Add new connection -> Promotheus Data sources -> url (promotheus) Dashboards -> import -> id (15661)
 
