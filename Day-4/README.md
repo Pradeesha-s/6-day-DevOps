@@ -5,7 +5,7 @@ docker:
 what is dev environment? It is a server where we are able to run our application.
 
 Testing environment? where software testing team can perform the functional test cases, non functional test cases and perform the performance testing, load testing and all the test cases will run in this environment.
-
+  
 UAT ENVIRONMENT: BEFORE RELEASING THE PRODUCT INTO THE MARKET , WE HAVE TO SHOW PROTOTYOPE OF THE APPLICATION TO THE CLIENT
 
 production environment : where we can actually deploy the application where users can access the application.
