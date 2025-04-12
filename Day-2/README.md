@@ -30,7 +30,7 @@ three tier architecture
 
 to install packages in Linux, yellow updater modifier yum install httpd which service httpd start service httpd status
 
-yum install git -y git clone -b master https://github.com/TarunG8504/Coursevita-Retail-Project.git
+yum install git -y git clone -b master https://github.com/Pradeesha-s/Coursevita-Retail-Project.git
 
 cp -r . /var/www/html
 
