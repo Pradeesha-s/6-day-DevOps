@@ -54,6 +54,6 @@ pod.yml One cpu = 100 millicores 1gb - 1024 Megabytes
 
 kubectl apply -f pod.yml kubectl get pods -o wide kubectl describe pod sample-pod
 
-git clone -b master https://github.com/TarunG8504/tarun-kubernetes-manifestfiles.git
+git clone -b master https://github.com/Pradeesha-s/pradeesha-kubernetes-manifestfiles.git
 
 kubectl apply -f userprofile-deployment.yml kubectl apply -f usernode-js-service.yml kubectl get deployments kubectl get svc ac6b997f103d846618fdf3442e10b5da-1008850829.ap-northeast-2.elb.amazonaws.com:3130
