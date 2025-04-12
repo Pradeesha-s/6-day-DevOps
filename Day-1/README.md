@@ -1,42 +1,42 @@
-Session- 1: Install jdk-21 (if doesn't exist) Install jenkins. Install plugins for jenkins Deploy to container CI Pipeline groovy script, declarative script pom.xml project object model clean package war web application Periodically building the application. Install Tomcat Deploying the application periodically on tomcat. Add post-build step, to automate deployment.\n
-Agile methodology\n
-6 phases: 
+Session- 1: Install jdk-21 (if doesn't exist) Install jenkins. Install plugins for jenkins Deploy to container CI Pipeline groovy script, declarative script pom.xml project object model clean package war web application Periodically building the application. Install Tomcat Deploying the application periodically on tomcat. Add post-build step, to automate deployment.
+#  Agile methodology
+# 6 phases:  
 1. requirement gathering
 2. Designing
 3. software development
 4. testing
 5. deployment
 6. maintainance
-4 environments
+# 4 environments 
 1. dev
 2. testing
 3. UAT
 4. production
-deploy to container : tomcat to jerkins
-manage Jenkins
-plugins
-serach deploy
-deploy to container - install
-download Jenkins
-https://www.jenkins.io/download/
-windows for down loading
-install tomcat
-windows service installer
-run service as localsystem
-port no 8090
-java 17
-http://localhost:8090/
-copy the link , folders , open with notepad , copy the password paste in browser and then install
-for Jenkins
-tom cat next,next next,  admin admin
-instal git
-manage plugins-tools-jdk-java_home-path
-maven:mave_home(name)-apply-save
-go to plugins , available plugins , maven -install
-Preparation	
-Checking internet connectivity
-Checking update center connectivity
-Success
+# deploy to container : tomcat to jerkins 
+# manage Jenkins
+# plugins 
+# serach deploy 
+# deploy to container - install 
+# download Jenkins 
+# https://www.jenkins.io/download/ 
+# windows for down loading  
+# install tomcat 
+# windows service installer 
+# run service as localsystem 
+# port no 8090 
+# java 17 
+# http://localhost:8090/ 
+# copy the link , folders , open with notepad , copy the password paste in browser and then install 
+# for Jenkins 
+# tom cat next,next next,  admin admin 
+# instal git 
+# manage plugins-tools-jdk-java_home-path 
+# maven:mave_home(name)-apply-save 
+# go to plugins , available plugins , maven -install 
+# Preparation 	
+Checking internet connectivity 
+Checking update center connectivity 
+Success 
 Ionicons API	 Success
 Folders	 Success
 OWASP Markup Formatter	 Success
@@ -138,12 +138,12 @@ Pipeline Maven Integration	 Success
 Pipeline Maven Plugin API	 Success
 Maven Release Plug-in	 Success
 Maven Info	 Success
-Maven Invoker	 Success
-Loading plugin extensions
-new item , maven-build-application(name)
-maven project
-https://github.com/Msocial123
-https://github.com/Msocial123/maven-web-application
-build periodically , schedule-h/3 * * * 
-pom.xlm  clean package
-deploy to container
+Maven Invoker	 Success 
+Loading plugin extensions 
+# new item , maven-build-application(name)
+# maven project 
+# https://github.com/Msocial123 
+# https://github.com/Msocial123/maven-web-application
+# build periodically , schedule-h/3 * * *  
+# pom.xlm  clean package 
+# deploy to container
