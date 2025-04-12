@@ -12,7 +12,7 @@ At the time of cluster creation, all the services like metric server, cli, core-
 
 When you deploy application in the production servers, we will never deploy any application in the default namespace.
 
-How to create a custom namespace? kubectl create ns tarun-ns kubectl get ns kubectl get pods kubectl run test-pod --image nginx --port 80 -n tarun-ns kubectl get pods -n pradeesha-ns kubectl delete pod test-pod -n pradeesha-ns
+How to create a custom namespace? kubectl create ns pradeesha-ns kubectl get ns kubectl get pods kubectl run test-pod --image nginx --port 80 -n tarun-ns kubectl get pods -n pradeesha-ns kubectl delete pod test-pod -n pradeesha-ns
 
 If pod goes down, there are 3 problems we have to face.
 
